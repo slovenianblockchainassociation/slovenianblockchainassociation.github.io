@@ -1,0 +1,1975 @@
+/*------------------------------------------------
+*	Template name : King
+*	Version       : 1.0
+*	Author        : FlaTheme
+*	Author URL    : http://themeforest.net/user/flatheme
+*
+*	Table of contents:
+*	1. 	Body/Main styles
+*	2.	Background styles
+*	3.	Section Title styles
+*	4.	Button styles
+*	5.	Navbar Menu styles
+*	6.	Home Section
+*	7.	About Section
+*	8.	Process Section
+*	9.	Team Section
+*	10.	Fun Facts Section
+*	11.	Portfolio section
+*	12.	Services section
+*	13.	Testimonial section
+*	14. Blog section
+*	15.	Clients section
+*	16.	Prices section
+*	17. Contact section
+*	18.	Footer
+*	19. Custom styles for Plugins
+*
+-------------------------------------------------*/
+
+/*-------------------------------------------------
+	1. Body/Main styles
+-------------------------------------------------*/
+html, body {
+	height: 100%;
+}
+
+body {
+	overflow-x: hidden;
+	color: rgb(80, 80, 80);
+	font: 300 15px 'Lato', sans-serif;
+	letter-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 10px;
+	color: rgb(20, 20, 20);
+}
+
+h1 {
+	font: 400 48px/62px 'Lato', sans-serif;
+}
+
+h2 {
+	font: 700 24px/38px 'Lato', sans-serif;
+}
+
+h3 {
+	font: 700 18px/32px 'Lato', sans-serif;
+}
+
+h4 {
+	font: 700 16px/30px 'Lato', sans-serif;
+}
+
+h5 {
+	font: 400 14px/28px 'Lato', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+
+h6 {
+	font: 400 12px/26px 'Lato', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+
+p {
+	line-height: 29px;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+p, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	color: rgb(20, 20, 20);
+	-webkit-transition: linear 0.1s;
+	transition: linear 0.1s;
+}
+
+a:hover {
+	color: rgb(80, 80, 80);
+	text-decoration: none;
+}
+
+a:focus, 
+input:focus, 
+textarea:focus, 
+button:focus {
+	outline: none;
+}
+
+button {
+	background: transparent;
+	border: none;
+	box-shadow: none;
+	padding: 0;
+	cursor: pointer;
+}
+
+input {
+	margin-bottom: 6px;
+}
+
+input, 
+textarea {
+	background: rgb(247, 247, 247);
+	width: 100%;
+	border: none;
+	box-shadow: none;
+	padding: 15px 20px;
+	color: rgb(80, 80, 80);
+	font: 300 15px 'Lato', sans-serif;
+	-webkit-transition: ease-out 0.2s;
+	transition: ease-out 0.2s;
+}
+
+textarea {
+	width: 100%;
+	height: 140px;
+}
+
+::-webkit-input-placeholder {
+	color: rgb(160, 160, 160);
+}
+
+:-moz-placeholder {
+	color: rgb(160, 160, 160); 
+}
+
+::-moz-placeholder {
+	color: rgb(160, 160, 160); 
+}
+
+blockquote {
+	background: rgb(247, 247, 247);
+	margin: 15px 0;
+	padding: 20px 30px 25px;
+	color: rgb(160, 160, 160);
+	font-style: italic;
+}
+blockquote footer {
+	position: relative;
+	margin-top: 10px;
+	padding-left: 20px;
+	color: rgb(20, 20, 20);
+	font: 400 12px 'Lato', sans-serif;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+blockquote footer::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	-webkit-transform: translate(0,-50%);
+	transform: translate(0,-50%);
+	background: rgb(20, 20, 20);
+	width: 10px;
+	height: 1px;
+}
+
+.row {
+	text-align: left;
+}
+
+/* ===== Spacings ===== */
+.margin-right-10 {
+	margin-right: 10px;
+}
+.margin-right-20 {
+	margin-right: 20px;
+}
+.margin-right-30 {
+	margin-right: 30px;
+}
+
+.margin-left-10 {
+	margin-left: 10px;
+}
+.margin-left-20 {
+	margin-left: 20px;
+}
+.margin-left-30 {
+	margin-left: 30px;
+}
+/* Remove Spacing */
+.no-margin {
+	margin: 0;
+}
+.no-padding {
+	padding: 0;
+}
+
+/* ===== Alignments ===== */
+.align-left, 
+.align-left div, 
+.align-left h1, 
+.align-left h2, 
+.align-left h3, 
+.align-left h4, 
+.align-left h5, 
+.align-left h6 {
+	text-align: left;
+}
+
+.align-center, 
+.align-center div, 
+.align-center h1, 
+.align-center h2, 
+.align-center h3, 
+.align-center h4, 
+.align-center h5, 
+.align-center h6 {
+	text-align: center;
+}
+
+.align-right, 
+.align-right div, 
+.align-right h1, 
+.align-right h2, 
+.align-right h3, 
+.align-right h4, 
+.align-right h5, 
+.align-right h6 {
+	text-align: right;
+}
+
+.align-justify, 
+.align-justify div, 
+.align-justify h1, 
+.align-justify h2, 
+.align-justify h3, 
+.align-justify h4, 
+.align-justify h5, 
+.align-justify h6 {
+	text-align: justify;
+}
+
+/*-------------------------------------------------
+	2. Background styles
+-------------------------------------------------*/
+/* ===== Background default styles ===== */
+.background-image {
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.background-solid {
+	background: #fff;
+	padding: 100px 0;
+	text-align: center;
+}
+
+.background-image, 
+.background-solid {
+	position: relative;
+	overflow: hidden;
+}
+
+.background-solid-grey {
+	background: rgb(247, 247, 247);
+	padding: 100px 0;
+	text-align: center;
+}
+
+.transparent-background {
+	width: 100%;
+	height: 100%;
+	padding: 100px 0;
+	text-align: center;
+}
+
+.transparent-background-light {
+	background: rgba(255, 255, 255, 0.9);
+}
+
+/* Background Borders */
+.border-top {
+	border-top: 1px solid rgb(235, 235, 235);
+}
+
+.border-y {
+	border-top: 1px solid rgb(235, 235, 235);
+	border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+.border-bottom {
+	border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+/* ===== Dark Background styles ===== */
+.background-solid-dark, 
+.transparent-background-dark {
+	color: rgba(255, 255, 255, 0.65);
+}
+
+.background-solid-dark {
+	background: rgb(30, 30, 30);
+}
+
+.transparent-background-dark {
+	background: rgba(0, 0, 0, 0.65);
+}
+
+.background-solid-dark p a, 
+.background-solid-dark span a, 
+.background-solid-dark h1, 
+.background-solid-dark h2, 
+.background-solid-dark h3, 
+.background-solid-dark h4, 
+.background-solid-dark h5, 
+.background-solid-dark h6, 
+.background-solid-dark h1 a, 
+.background-solid-dark h2 a, 
+.background-solid-dark h3 a, 
+.background-solid-dark h4 a, 
+.background-solid-dark h5 a, 
+.background-solid-dark h6 a, 
+.transparent-background-dark p a, 
+.transparent-background-dark span a, 
+.transparent-background-dark h1, 
+.transparent-background-dark h2, 
+.transparent-background-dark h3, 
+.transparent-background-dark h4, 
+.transparent-background-dark h5, 
+.transparent-background-dark h6, 
+.transparent-background-dark h1 a, 
+.transparent-background-dark h2 a, 
+.transparent-background-dark h3 a, 
+.transparent-background-dark h4 a, 
+.transparent-background-dark h5 a, 
+.transparent-background-dark h6 a {
+	color: #fff;
+}
+
+.background-solid-dark p a:hover, 
+.background-solid-dark span a:hover, 
+.background-solid-dark h1 a:hover, 
+.background-solid-dark h2 a:hover, 
+.background-solid-dark h3 a:hover, 
+.background-solid-dark h4 a:hover, 
+.background-solid-dark h5 a:hover, 
+.background-solid-dark h6 a:hover, 
+.transparent-background-dark p a:hover, 
+.transparent-background-dark span a:hover, 
+.transparent-background-dark h1 a:hover, 
+.transparent-background-dark h2 a:hover,
+.transparent-background-dark h3 a:hover, 
+.transparent-background-dark h4 a:hover, 
+.transparent-background-dark h5 a:hover, 
+.transparent-background-dark h6 a:hover {
+	color: rgba(255, 255, 255, 0.65);
+}
+
+/*-------------------------------------------------
+	3. Section Title styles
+-------------------------------------------------*/
+.section-title {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 60px;
+	text-align: center;
+	font: 400 14px/28px 'Lato', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.section-title::before, 
+.section-title::after {
+	content: '';
+	position: absolute;
+}
+
+.section-title::before {
+	top: -10px;
+	right: -30px;
+	bottom: -10px;
+	left: -30px;
+	border-top: 1px solid rgb(235, 235, 235);
+	border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+.section-title::after {
+	top: -13px;
+	left: 50%;
+	-webkit-transform: translate(-50%,0);
+	transform: translate(-50%,0);
+	background: rgb(235, 235, 235);
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+}
+
+.background-solid-dark .section-title {
+	color: #fff;
+}
+.background-solid-dark .section-title::before {
+	border-color: rgba(255, 255, 255, 0.2);
+}
+.background-solid-dark .section-title::after {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+/*-------------------------------------------------
+	4. Button styles
+-------------------------------------------------*/
+.button {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	margin-top: 30px;
+	font: 400 12px 'Lato', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	-webkit-transition: linear 0.1s;
+	transition: linear 0.1s;
+}
+
+/* ===== Button Sizes ===== */
+/* Small Button */
+.button-small {
+	padding: 10px 20px;
+}
+
+/* Medium Button */
+.button-medium {
+	padding: 15px 30px;
+}
+
+/* Large Button */
+.button-large {
+	padding: 20px 40px;
+}
+
+/* ===== Rounded Buttons ===== */
+.button-rounded {
+	overflow: hidden;
+	border-radius: 60px;
+}
+
+.button-rounded.button-bordered-light:hover, 
+.button-rounded.button-bordered-light:focus {
+	background: #fff;
+}
+
+.button-rounded.button-bordered-dark:hover, 
+.button-rounded.button-bordered-dark:focus {
+	background: rgb(20, 20, 20);
+}
+
+.button-rounded.button-bordered-light:hover::before,
+.button-rounded.button-bordered-light:focus::before,
+.button-rounded.button-bordered-dark:hover::before,
+.button-rounded.button-bordered-dark:focus::before {
+	width: 0;
+}
+
+/* ===== Defualt button styles ===== */
+/* Default Dark Button */
+.button-default-dark {
+	background: rgb(20, 20, 20);
+	border: 1px solid rgb(20, 20, 20);
+	color: #fff;
+}
+
+.button-default-dark:hover, 
+.button-default-dark:focus {
+	background: rgba(20, 20, 20, 0.9);
+	border-color: rgba(20, 20, 20, 0.9);
+	color: #fff;
+}
+
+/* Default Light Button */
+.button-default-light {
+	background: #fff;
+	border: 1px solid #fff;
+	color: rgb(20, 20, 20);
+}
+
+.button-default-light:hover, 
+.button-default-light:focus {
+	background: rgba(255, 255, 255, 0.9);
+	border-color: rgba(255, 255, 255, 0.9);
+	color: rgb(20, 20, 20);
+}
+
+/* ===== Bordered button styles ===== */
+/* Bordered Dark Button */
+.button-bordered-dark {
+	z-index: 1;
+	background: transparent;
+	border: 1px solid rgb(20, 20, 20);
+	color: rgb(20, 20, 20);
+}
+
+.button-bordered-dark::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background: rgb(20, 20, 20);
+	width: 0;
+	height: 100%;
+	-webkit-transition: ease-out 0.2s;
+	transition: ease-out 0.2s;
+}
+
+.button-bordered-dark:hover, 
+.button-bordered-dark:focus {
+	color: #fff;
+}
+
+.button-bordered-dark:hover::before, 
+.button-bordered-dark:focus::before {
+	width: 100%;
+}
+
+/* Bordered Light Button */
+.button-bordered-light {
+	z-index: 1;
+	background: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+.button-bordered-light::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background: #fff;
+	width: 0;
+	height: 100%;
+	-webkit-transition: ease-out 0.2s;
+	transition: ease-out 0.2s;
+}
+
+.button-bordered-light:hover, 
+.button-bordered-light:focus {
+	color: rgb(20, 20, 20);
+}
+
+.button-bordered-light:hover::before, 
+.button-bordered-light:focus::before {
+	width: 100%;
+}
+
+/* Button Style 01 Light */
+.button-style1-light {
+	background: rgb(240, 240, 240);
+	color: rgb(20, 20, 20);
+}
+.button-style1-light:hover, 
+.button-style1-light:focus {
+	background: rgb(20, 20, 20);
+	color: #fff;
+}
+
+/* Button Style 01 Dark */
+.button-style1-dark {
+	background: rgb(20, 20, 20);
+	color: #fff;
+}
+.button-style1-dark:hover, 
+.button-style1-dark:focus {
+	background: rgb(240, 240, 240);
+	color: rgb(20, 20, 20);
+}
+
+/* ===== Text button styles ===== */
+.text-button {
+	position: relative;
+	display: inline-block;
+	margin-top: 25px;
+	color: rgb(20, 20, 20);
+	font: 400 12px 'Lato', sans-serif;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+
+.text-button::before {
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	background: rgb(20, 20, 20);
+	width: 0;
+	height: 1px;
+	-webkit-transition: ease-out 0.2s;
+	transition: ease-out 0.2s;
+}
+
+.text-button:hover, 
+.text-button:focus {
+	color: rgb(20, 20, 20);
+}
+
+.text-button:hover::before, 
+.text-button:focus::before {
+	width: 100%;
+}
+
+/* Text Buttons Light version */
+.text-button-light, 
+.text-button-light:hover, 
+.text-button-light:focus {
+	color: #fff;
+}
+
+.text-button-light::before {
+	background: #fff;
+}
+
+/* ===== Round button styles ===== */
+.round-button {
+	display: inline-block;
+	background: #fff;
+	margin: 20px 5px 0 5px;
+	border-radius: 50%;
+	color: rgb(20, 20, 20);
+	text-align: center;
+	-webkit-transition: linear 0.1s;
+	transition: linear 0.1s;
+}
+
+.round-button:hover, 
+.round-button:focus {
+	background: rgba(255, 255, 255, 0.9);
+	color: rgb(20, 20, 20);
+}
+
+/* Round button sizes */
+.round-button-small {
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	font-size: 14px;
+}
+.round-button-medium {
+	width: 42px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 16px;
+}
+.round-button-large {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+}
+
+/* Round Button dark version */
+.round-button-dark {
+	background: rgb(20, 20, 20);
+	color: #fff;
+}
+
+.round-button-dark:hover, 
+.round-button-dark:focus {
+	background: rgba(20, 20, 20, 0.9);
+	color: #fff;
+}
+
+/* ===== Go top button ===== */
+.go-top-button {
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	z-index: 2;
+	visibility: hidden;
+	opacity: 0;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	line-height: 50px;
+	text-align: center;
+	-webkit-transition: ease-out 0.2s;
+	transition: ease-out 0.2s;
+}
+
+.go-top-button-visible {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* Go top button light version */
+.go-top-button-light {
+	background: rgba(255, 255, 255, 0.9);
+	border: 1px solid rgb(235, 235, 235);
+	color: rgb(160, 160, 160);
+}
+
+.go-top-button-light:hover, 
+.go-top-button-light:focus {
+	color: rgb(20, 20, 20);
+}
+
+/* Go top button dark version */
+.go-top-button-dark {
+	background: rgba(0, 0, 0, 0.9);
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.go-top-button-dark:hover, 
+.go-top-button-dark:focus {
+	color: #fff;
+}
+
+/*-------------------------------------------------
+	5. Navbar Menu styles
+-------------------------------------------------*/
+/* Navbar Light version is the default */
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	background: transparent;
+	width: 100%;
+	height: 90px;
+	padding: 0;
+	-webkit-transition: ease-out 0.2s;
+	transition: ease-out 0.2s;
+}
+
+.navbar-shrink {
+	height: 60px;
+}
+
+.navbar-light.navbar-shrink {
+	background: #fff;
+	border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+.navbar .container {
+	position: relative;
+}
+
+.navbar-brand img {
+	width: auto;
+	height: auto;
+	max-height: 34px;
+}
+
+.nav .nav-item {
+	display: inline-block;
+	padding: 0;
+	margin-right: 30px;
+	font: 400 12px 'Lato', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+
+.nav .nav-item:last-child {
+	margin: 0;
+}
+
+.nav .nav-item .nav-link {
+	position: relative;
+	padding: 0;
+	color: rgb(160, 160, 160);
+}
+
+.nav .nav-item .nav-link::before {
+	content: '';
+	position: absolute;
+	background: rgb(20, 20, 20);
+	width: 0;
+	height: 1px;
+	bottom: -5px;
+	left: 0;
+	-webkit-transition: ease-out 0.2s;
+	transition: ease-out 0.2s;
+}
+
+.nav .nav-item .nav-link:hover, 
+.nav .nav-item .nav-link:focus, 
+.nav .nav-item .nav-link.active {
+	color: rgb(20, 20, 20);
+}
+
+.nav .nav-item .nav-link.active::before {
+	width: 100%;
+}
+
+/* Nav Dropdown */
+.nav-item {
+	position: relative;
+}
+
+.dropdown-menu {
+	top: 37px;
+	left: -20px;
+	-webkit-transform: translateY(5px);
+	transform: translateY(5px);
+	display: block;
+	visibility: hidden;
+	opacity: 0;
+	background: rgb(20, 20, 20);
+	margin: 0;
+	padding: 10px 0;
+	border: none;
+	border-radius: 0;
+	-webkit-transition: ease-out 0.2s;
+	transition: ease-out 0.2s;
+}
+
+.dropdown-menu.show {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.dropdown-item {
+	margin: 10px 0;
+	padding: 0 20px;
+	color: rgba(255, 255, 255, 0.7);
+	font: 400 12px 'Lato', sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.dropdown-item:hover, 
+.dropdown-item:focus, 
+.dropdown-item.active {
+	background: transparent;
+	color: #fff;
+}
+
+/* Navbar Dark version styles */
+.navbar-dark.navbar-shrink {
+	background: rgb(20, 20, 20);
+}
+
+.navbar-dark .nav .nav-item .nav-link {
+	color: rgba(255, 255, 255, 0.7);
+}
+.navbar-dark .nav .nav-item .nav-link::before {
+	background: #fff;
+}
+.navbar-dark .nav .nav-item .nav-link:hover, 
+.navbar-dark .nav .nav-item .nav-link:focus, 
+.navbar-dark .nav .nav-item .nav-link.active {
+	color: #fff;
+}
+
+/* Navbar Transparent background */
+.navbar-transparent.navbar-light.navbar-shrink {
+	background: rgba(255, 255, 255, 0.9);
+}
+.navbar-transparent.navbar-dark.navbar-shrink {
+	background: rgba(0, 0, 0, 0.9);
+}
+.navbar-transparent .dropdown-menu {
+	background: rgba(0, 0, 0, 0.9);
+}
+
+/* ===== Toggle Button ===== */
+.toggle-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 3;
+	visibility: hidden;
+	opacity: 0;
+	width: 60px;
+	height: 100%;
+	cursor: pointer;
+}
+
+.lines {
+	position: relative;
+	display: inline-block;
+	background: rgb(20, 20, 20);
+	width: 18px;
+	height: 2px;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+}
+
+.lines::before,
+.lines::after {
+	position: absolute;
+	content: '';
+	left: 0;
+	display: inline-block;
+	background: rgb(20, 20, 20);
+	width: 18px;
+	height: 2px;
+	-webkit-transition: linear 0.1s;
+	transition: linear 0.1s;
+}
+
+.lines::before {
+	top: 5px;
+}
+.lines::after {
+	top: -5px;
+}
+
+.toggle-close .lines {
+	background: transparent;
+}
+
+.toggle-close .lines::before, 
+.toggle-close .lines::after {
+	top: 0;
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+
+.toggle-close .lines::before {
+	-webkit-transform: rotate3d(0, 0, 1, 45deg);
+	transform: rotate3d(0, 0, 1, 45deg);
+}
+.toggle-close .lines::after {
+	-webkit-transform: rotate3d(0, 0, 1, -45deg);
+	transform: rotate3d(0, 0, 1, -45deg);
+}
+
+/* Toggle button on Dark version */
+.navbar-dark .lines, 
+.navbar-dark .lines::before, 
+.navbar-dark .lines::after {
+	background: #fff;
+}
+
+.navbar-dark .toggle-close .lines {
+	background: transparent;
+}
+
+/*-------------------------------------------------
+	6. Home section styles
+-------------------------------------------------*/
+.home-fullscreen, 
+.home-fullscreen .background-image, 
+.home-fullscreen .background-solid {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+}
+
+.home-fullscreen .transparent-background, 
+.home-fullscreen .background-solid, 
+.home-fullwidth .transparent-background, 
+.home-fullwidth .background-solid {
+	padding: 0;
+}
+
+.home-fullscreen .container-fluid, 
+.home-fullscreen .container, 
+.home-fullwidth .container-fluid, 
+.home-fullwidth .container {
+	position: relative;
+	height: 100%;
+}
+
+.home-fullwidth .container-fluid, 
+.home-fullwidth .container {
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+.home-fullscreen .home-middle-content {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translate(0,-50%);
+	transform: translate(0,-50%);
+}
+
+.home-middle-content {
+	z-index: 1;
+	text-align: center;
+}
+
+.home-middle-content h1,
+.home-middle-content h2,
+.home-middle-content h3,
+.home-middle-content h4,
+.home-middle-content h5,
+.home-middle-content h6 {
+	margin-bottom: 20px;
+}
+
+.home-middle-content h2, 
+.home-middle-content h3, 
+.home-middle-content h4 {
+	color: rgb(80, 80, 80);
+	font-weight: 300;
+}
+
+/* Scroll down button */
+.scroll-down-button {
+	position: absolute;
+	bottom: 60px;
+	left: 50%;
+	-webkit-transform: translate(-50%,0);
+	transform: translate(-50%,0);
+	z-index: 1;
+	display: inline-block;
+	color: #141414;
+	font-size: 24px;
+}
+
+.scroll-down-button:hover, 
+.scroll-down-button:focus {
+	color: rgb(80, 80, 80);
+}
+
+.container.align-left .scroll-down-button, 
+.container.align-right .scroll-down-button {
+	-webkit-transform: translate(0,0);
+	transform: translate(0,0);
+}
+.container.align-left .scroll-down-button {
+	left: 15px;
+}
+.container.align-right .scroll-down-button {
+	right: 15px;
+}
+
+/* Home contents on Dark background */
+.transparent-background-dark .home-middle-content h2, 
+.transparent-background-dark .home-middle-content h3, 
+.transparent-background-dark .home-middle-content h4, 
+.background-solid-dark .home-middle-content h2, 
+.background-solid-dark .home-middle-content h3, 
+.background-solid-dark .home-middle-content h4 {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.transparent-background-dark .scroll-down-button, 
+.background-solid-dark .scroll-down-button {
+	color: #fff;
+}
+.transparent-background-dark .scroll-down-button:hover,
+.transparent-background-dark .scroll-down-button:focus,
+.background-solid-dark .scroll-down-button:hover,
+.background-solid-dark .scroll-down-button:focus {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+/* ===== Home Slider ===== */
+.homeSliderWrapper, 
+.homeSliderWrapper .owl-carousel, 
+.homeSliderWrapper .owl-stage-outer, 
+.homeSliderWrapper .owl-stage, 
+.homeSliderWrapper .owl-item {
+	height: 100%;
+}
+
+.homeSliderWrapper .container-fluid, 
+.homeSliderWrapper .container {
+	padding: 0;
+}
+
+.home-fullwidth .homeSliderWrapper .owl-carousel {
+	padding: 200px 0;
+}
+
+/* Home Slider Custom Navigation */
+.homeSlider-navigation {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(0,-50%);
+	transform: translate(0,-50%);
+	width: 100%;
+	height: 50px;
+}
+
+.homeSlider-navigation li {
+	position: absolute;
+	background: #fff;
+	width: 50px;
+	height: 50px;
+	color: rgb(20, 20, 20);
+	line-height: 50px;
+	cursor: pointer;
+}
+
+.homeSlider-navigation li:first-child {
+	left: 0;
+}
+.homeSlider-navigation li:last-child {
+	right: 0;
+}
+
+.homeSlider-navigation li:hover, 
+.homeSlider-navigation li:focus {
+	background: rgba(255, 255, 255, 0.8);
+}
+
+/* Home Slider dots */
+.homeSliderWrapper .owl-dots {
+	position: absolute;
+	bottom: 60px;
+	left: 50%;
+	-webkit-transform: translate(-50%,0);
+	transform: translate(-50%,0);
+}
+
+/* ===== Home Slider on Dark background */
+.transparent-background-dark .homeSlider-navigation li, 
+.background-solid-dark .homeSlider-navigation li {
+	background: rgba(0, 0, 0, 0.9);
+	color: #fff;
+}
+
+.transparent-background-dark .homeSlider-navigation li:hover, 
+.transparent-background-dark .homeSlider-navigation li:focus, 
+.background-solid-dark .homeSlider-navigation li:hover, 
+.background-solid-dark .homeSlider-navigation li:focus {
+	background: rgba(0, 0, 0, 0.8);
+	color: #fff;
+}
+
+/*-------------------------------------------------
+	7. About section styles
+-------------------------------------------------*/
+/* ===== Skills ===== */
+.progress-box {
+	margin-bottom: 25px;
+}
+
+.progress-box:last-child {
+	margin: 0;
+}
+
+.progress-box h6 {
+	margin-bottom: 0;
+}
+
+.progress, 
+.progress-bar {
+	height: 1px;
+	box-shadow: none;
+	border-radius: 0;
+}
+
+.progress {
+	overflow: visible;
+	background: rgb(235, 235, 235);
+	margin: 0;
+	padding: 0;
+}
+
+.progress-bar {
+	position: relative;
+	background: rgb(20, 20, 20);
+	width: 30%;
+	border: none;
+}
+
+.progress-bar span {
+	position: absolute;
+	top: -22px;
+	right: 0;
+	display: inline-block;
+	background: rgb(20, 20, 20);
+	padding: 3px 5px;
+	color: #fff;
+	font-weight: 400;
+	font-size: 10px;
+}
+
+/* Progress bars on Dark Background */
+.background-solid-dark .progress {
+	background: rgba(255, 255, 255, 0.2);
+}
+.background-solid-dark .progress-bar, 
+.background-solid-dark .progress-bar span {
+	background: #fff;
+}
+.background-solid-dark .progress-bar span {
+	color: rgb(80, 80, 80);
+}
+
+/*-------------------------------------------------
+	8. Process section styles
+-------------------------------------------------*/
+.process-box {
+	position: relative;
+	margin: 15px 0;
+	padding-left: 60px;
+}
+
+.process-box span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: rgb(160, 160, 160);
+	font-size: 24px;
+}
+
+/*-------------------------------------------------
+	9. Team section styles
+-------------------------------------------------*/
+.team-box {
+	text-align: center;
+}
+
+.team-box h2, 
+.team-box h3, 
+.team-box h4, 
+.team-box h5, 
+.team-box h6 {
+	margin: 0;
+}
+
+.team-image {
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.team-image::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	opacity: 0;
+	background: rgb(247, 247, 247);
+	width: 100%;
+	height: 100%;
+	-webkit-transition: ease-out 0.2s;
+	transition: ease-out 0.2s;
+}
+
+.team-image div {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	-webkit-transform: translate(0,-50%);
+	transform: translate(0,-50%);
+	z-index: 1;
+	visibility: hidden;
+	opacity: 0;
+	padding: 30px;
+	color: rgb(80, 80, 80);
+	-webkit-transition: ease-out 0.2s;
+	transition: ease-out 0.2s;
+}
+
+.team-image div h2, 
+.team-image div h3, 
+.team-image div h4, 
+.team-image div h5, 
+.team-image div h6 {
+	margin: 0 0 10px;
+	color: rgb(20, 20, 20);
+}
+
+.team-image div ul {
+	margin-top: 17px;
+}
+
+.team-image div ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.team-image div ul li:last-child {
+	margin: 0;
+}
+
+.team-image:hover::before, 
+.team-image:focus::before, 
+.team-image:hover div, 
+.team-image:focus div {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* Team Dark hovers */
+.team-dark .team-image::before {
+	background: rgb(30, 30, 30);
+}
+.team-dark .team-image div h2, 
+.team-dark .team-image div h3, 
+.team-dark .team-image div h4, 
+.team-dark .team-image div h5, 
+.team-dark .team-image div h6, 
+.team-dark .team-image ul li a {
+	color: #fff;
+}
+.team-dark .team-image div, 
+.team-dark .team-image ul li a:hover, 
+.team-dark .team-image ul li a:focus {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+/*-------------------------------------------------
+	10. Fun Facts section styles
+-------------------------------------------------*/
+.facts-box {
+	margin: 15px 0;
+}
+
+.facts-counter {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: 400;
+	font-size: 32px;
+}
+
+.facts-counter[data-plus]:after { 
+	content: attr(data-plus);
+}
+
+/* Fun Facts on Dark background */
+.transparent-background-dark .facts-counter, 
+.background-solid-dark .facts-counter {
+	color: #fff;
+}
+
+/*-------------------------------------------------
+	11. Portfolio section
+-------------------------------------------------*/
+.portfolio-filter {
+	margin-bottom: 60px;
+}
+
+.portfolio-filter ul li {
+	position: relative;
+	display: inline-block;
+	margin: 0 15px;
+	color: rgb(160, 160, 160);
+	font: 400 12px 'Lato', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	cursor: pointer;
+	-webkit-transition: linear 0.1s;
+	transition: linear 0.1s;
+}
+
+.portfolio-filter ul li::before {
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	background: rgb(20, 20, 20);
+	width: 0;
+	height: 1px;
+	-webkit-transition: ease-out 0.2s;
+	transition: ease-out 0.2s;
+}
+
+.portfolio-filter ul li:hover, 
+.portfolio-filter ul li.active {
+	color: rgb(20, 20, 20);
+}
+
+.portfolio-filter ul li.active::before {
+	width: 100%;
+}
+
+.portfolio-box {
+	position: relative;
+}
+
+.portfolio-hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	display: block;
+	visibility: hidden;
+	opacity: 0;
+	background: rgb(247, 247, 247);
+	width: 100%;
+	height: 100%;
+	padding: 30px;
+	color: rgb(80, 80, 80);
+	-webkit-transition: ease-out 0.2s;
+	transition: ease-out 0.2s;
+}
+
+.portfolio-hover div {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translate(0,-50%);
+	transform: translate(0,-50%);
+	color: rgb(80, 80, 80);
+}
+
+.portfolio-hover span, 
+.portfolio-hover h2, 
+.portfolio-hover h3, 
+.portfolio-hover h4, 
+.portfolio-hover h5, 
+.portfolio-hover h6 {
+	-webkit-transform: translateY(3px);
+	transform: translateY(3px);
+	opacity: 0;
+	-webkit-transition: ease-out 0.2s;
+	transition: ease-out 0.2s;
+}
+
+.portfolio-hover span {
+	display: block;
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.portfolio-hover h2, 
+.portfolio-hover h3, 
+.portfolio-hover h4, 
+.portfolio-hover h5, 
+.portfolio-hover h6 {
+	margin: 15px 0 0;
+	color: rgb(20, 20, 20);
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.portfolio-box:hover .portfolio-hover, 
+.portfolio-box:focus .portfolio-hover {
+	visibility: visible;
+	opacity: 1;
+}
+
+.portfolio-box:hover .portfolio-hover h6, 
+.portfolio-box:focus .portfolio-hover h6, 
+.portfolio-box:hover .portfolio-hover span, 
+.portfolio-box:focus .portfolio-hover span {
+	opacity: 1;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+/* ===== Portfolio box Spacings ===== */
+.portfolio-spacing-6 {
+	margin: -3px;
+}
+.portfolio-spacing-6 .portfolio-item {
+	padding: 3px;
+}
+
+.portfolio-spacing-10 {
+	margin: -5px;
+}
+.portfolio-spacing-10 .portfolio-item {
+	padding: 5px;
+}
+
+.portfolio-spacing-20 {
+	margin: -10px;
+}
+.portfolio-spacing-20 .portfolio-item {
+	padding: 10px;
+}
+
+.portfolio-spacing-30 {
+	margin: -15px;
+}
+.portfolio-spacing-30 .portfolio-item {
+	padding: 15px;
+}
+
+/* ===== Portfolio filter on Dark background ===== */
+.background-solid-dark .portfolio-filter ul li {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.background-solid-dark .portfolio-filter ul li::before {
+	background: #fff;
+}
+
+.background-solid-dark .portfolio-filter ul li:hover, 
+.background-solid-dark .portfolio-filter ul li.active {
+	color: #fff;
+}
+
+/* ===== Portfolio dark hovers ===== */
+.portfolio-dark .portfolio-hover {
+	background: rgb(30, 30, 30);
+}
+
+.portfolio-dark .portfolio-hover div {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.portfolio-dark .portfolio-hover h2, 
+.portfolio-dark .portfolio-hover h3, 
+.portfolio-dark .portfolio-hover h4, 
+.portfolio-dark .portfolio-hover h5, 
+.portfolio-dark .portfolio-hover h6 {
+	color: #fff;
+}
+
+/*-------------------------------------------------
+	12. Services section
+-------------------------------------------------*/
+.services-box {
+	position: relative;
+	margin-bottom: 30px;
+	padding-left: 62px;
+}
+
+.services-box i {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 32px;
+}
+
+/*-------------------------------------------------
+	13. Testimonial section
+-------------------------------------------------*/
+.testimonialWrapper {
+	width: auto;
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.quote-round-box {
+	display: inline-block;
+	background: rgb(20, 20, 20);
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	color: #fff;
+	line-height: 50px;
+}
+
+.quote-round-box i {
+	font-size: 16px;
+}
+
+.testimonialWrapper p {
+	margin: 15px 0;
+	font-style: italic;
+}
+
+.testimonialWrapper h2, 
+.testimonialWrapper h3, 
+.testimonialWrapper h4, 
+.testimonialWrapper h5, 
+.testimonialWrapper h6 {
+	margin: 0;
+}
+
+/* Testimonials on Dark Background */
+.transparent-background-dark .quote-round-box, 
+.background-solid-dark .quote-round-box {
+	background: #fff;
+	color: rgb(20, 20, 20);
+}
+
+/*-------------------------------------------------
+	14. Blog section
+-------------------------------------------------*/
+.blog-post-box {
+	text-align: left;
+}
+
+.blog-img div {
+	position: relative;
+	overflow: hidden;
+}
+
+.blog-img div img {
+	-webkit-transition: ease-out 0.2s;
+	transition: ease-out 0.2s;
+}
+
+.blog-img div:hover img, 
+.blog-img div:focus img {
+	-webkit-transform: scale(1.01);
+	transform: scale(1.01);
+}
+
+.blog-img div a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	visibility: hidden;
+	opacity: 0;
+	background: rgba(255, 255, 255, 0.1);
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	font-size: 16px;
+	-webkit-transition: ease-out 0.2s;
+	transition: ease-out 0.2s;
+}
+
+.blog-img div:hover a, 
+.blog-img div:focus a {
+	visibility: visible;
+	opacity: 1;
+}
+
+.blog-content span {
+	display: block;
+	margin-bottom: 10px;
+	color: rgb(160, 160, 160);
+	font-size: 14px;
+}
+
+.blog-content span a {
+	color: rgb(160, 160, 160);
+}
+
+.blog-content span a:hover, 
+.blog-content span a:focus {
+	color: rgb(80, 80, 80);
+}
+
+/*-------------------------------------------------
+	15. Clients section
+-------------------------------------------------*/
+.clientsWrapper .owl-carousel, 
+.clientsWrapper .owl-carousel:active {
+	cursor: ew-resize;
+}
+
+.clients-box img {
+	opacity: 0.7;
+	width: auto;
+	max-width: 160px;
+	-webkit-transition: ease-out 0.2s;
+	transition: ease-out 0.2s;
+}
+
+.clients-box a {
+	display: inline-block;
+}
+
+.clients-box a:hover img, 
+.clients-box a:focus img{
+	opacity: 1;
+}
+
+/*-------------------------------------------------
+	16. Prices section
+-------------------------------------------------*/
+.prices-box {
+	background: rgb(247, 247, 247);
+	margin-top: 15px;
+	padding-bottom: 30px;
+	text-align: center;
+	color: rgb(80, 80, 80);
+}
+
+.price {
+	background: rgb(20, 20, 20);
+	padding: 30px;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.price h1, 
+.price h2, 
+.price h3, 
+.price h4, 
+.price h5, 
+.price h6 {
+	margin: 0;
+	color: #fff;
+}
+
+.price span {
+	font: 400 10px 'Lato', sans-serif;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+
+.prices-box ul {
+	padding: 30px 30px 0;
+}
+
+.prices-box ul li {
+	margin-bottom: 15px;
+}
+.prices-box ul li:last-child {
+	margin: 0;
+}
+
+/* Recommended Prices box */
+.prices-box-recommended {
+	background: rgb(25, 25, 25);
+	color: rgba(255, 255, 255, 0.7);
+}
+
+/*-------------------------------------------------
+	17. Contact section
+-------------------------------------------------*/
+.contact-formWrapper {
+	width: auto;
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: right;
+}
+
+.contact-formWrapper {
+	position: relative;
+}
+
+.submit-result {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.submit-result span {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: ease-out 0.2s;
+	transition: ease-out 0.2s;
+}
+#success {
+	color: green;
+}
+#error {
+	color: red;
+}
+.error-bg {
+	background: rgba(255, 0, 0, 0.1);
+}
+span.show-result {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* ===== Contact Info styles ===== */
+.contact-infoWrapper {
+	width: auto;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.contact-infoWrapper .row {
+	text-align: center;
+}
+
+/* ===== Google Map styles ===== */
+#map-canvas {
+	height: 500px;
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+/*-------------------------------------------------
+	18. Footer
+-------------------------------------------------*/
+.footerWrapper img {
+	display: inline-block;
+	width: auto;
+	height: auto;
+	max-height: 40px;
+	margin-bottom: 15px;
+}
+
+.footerWrapper ul {
+	margin: 15px 0;
+}
+
+.footerWrapper ul li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+/* Footer on Dark Background */
+footer .background-solid-dark {
+	background: rgb(20, 20, 20);
+}
+
+.background-solid-dark .footerWrapper ul li a {
+	color: rgba(255, 255, 255, 0.7);
+}
+.background-solid-dark .footerWrapper ul li a:hover, 
+.background-solid-dark .footerWrapper ul li a:focus {
+	color: #fff;
+}
+
+/*-------------------------------------------------
+	19. Custom styles for plugins
+-------------------------------------------------*/
+/* ===== Preloader Wrapper ===== */
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: ease-out 0.4s;
+	transition: ease-out 0.4s;
+}
+
+.loaded #preloader {
+	opacity: 0;
+	visibility: hidden;
+}
+
+/* ===== Owl Carousel dots style ===== */
+.owl-dots {
+	margin-top: 20px;
+	line-height: 7px;
+}
+
+.owl-dot {
+	position: relative;
+	display: inline-block;
+	background: transparent;
+	width: 7px;
+	height: 7px;
+	border: 1px solid rgb(200, 200, 200);
+	border-radius: 50%;
+	margin-right: 20px;
+}
+.owl-dot:last-child {
+	margin: 0;
+}
+
+.owl-dot:hover,
+.owl-dot:focus,
+.owl-dot.active {
+	border-color: rgb(20, 20, 20);
+}
+.owl-dot.active {
+	background: rgb(20, 20, 20);
+}
+
+/* Owl carousel dots on dark background */
+.background-solid-dark .owl-dot, 
+.transparent-background-dark .owl-dot {
+	border-color: rgba(255, 255, 255, 0.3);
+}
+.background-solid-dark .owl-dot:hover,
+.background-solid-dark .owl-dot:focus,
+.background-solid-dark .owl-dot.active,
+.transparent-background-dark .owl-dot:hover,
+.transparent-background-dark .owl-dot:focus,
+.transparent-background-dark .owl-dot.active {
+	border-color: #fff;
+}
+.background-solid-dark .owl-dot.active, 
+.transparent-background-dark .owl-dot.active {
+	background: #fff;
+}
+
+/* ===== Magnific Popup Lightbox styles ===== */
+.mfp-container,
+.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: ease-out 0.2s;
+	transition: ease-out 0.2s;
+}
+.mfp-container {
+	-webkit-transform: scale(0.98);
+	transform: scale(0.98);
+	padding: 0 20px;
+}
+
+.mfp-ready .mfp-container {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+.mfp-ready.mfp-bg {
+	opacity: 0.8;
+}
+
+.mfp-removing .mfp-container,
+.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+.mfp-removing .mfp-container {
+	-webkit-transform: scale(0.98);
+	transform: scale(0.98);
+}
+
+.lightbox {
+	position: relative;
+	background: #fff;
+	width: auto;
+	max-width: 500px;
+	margin: 0 auto;
+}
+.lightbox div {
+	padding: 30px;
+}
+.lightbox iframe {
+	border: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+}
+
+button.mfp-close {
+	display: block;
+	top: -44px;
+	opacity: 1;
+	width: auto;
+	height: auto;
+	line-height: auto;
+	font-size: 24px;
+	-webkit-transition: linear 0.1s;
+	transition: linear 0.1s;
+}
+.mfp-close-btn-in .mfp-close {
+	color: rgba(255, 255, 255, 0.7);
+}
+button.mfp-close:hover {
+	top: -44px;
+	opacity: 1;
+	color: #fff;
+}
+
+/* ===== Typed js ===== */
+#typed-strings, 
+.typed-cursor {
+	display: none;
+}
+
+#typed::after {
+	content: '|';
+	display: inline;
+	-webkit-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* ===== Particle Background ===== */
+#particleBackground {
+	position: absolute;
+	top: 0;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+}
+/* ===== end Particle Background */
